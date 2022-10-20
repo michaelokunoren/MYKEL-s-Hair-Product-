@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 15px;
+}
+button{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+header{
+    display: flex;
+     width: 80%;
+     height: 10vh;
+    margin: auto;
+    align-items: center;
+   
+}
+.logo-medium, 
+.nav-links,
+.cart-outline {
+    display: flex;
+    align-items: center;
+}
+
+.logo-medium {
+flex: 1;
+}
+.logo-medium ion-icon {
+    position: relative;
+    font-size: 50px;
+}
+.logo {
+ font-weight: 600;
+ margin: 5px;
+}
+
+nav {
+ flex: 5;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-links{
+    color: rgb(135, 135, 211);
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+/* .cart {
+    flex: 1;
+    justify-content: flex-end;
+    font-weight: 100;
+    margin: 5px;
+    
+} */
+.cart ion-icon {
+    font-size: 25px;
+    cursor: pointer;
+    ali;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+
+.introduction{
+    
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(124, 79, 111),skyblue );
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: rgb(241, 135, 153);
+
+}
+.cta {
+    padding: 50px 0px 0px 0px ;
+}
+.cta-select{
+    border: 2px solid rgb(214, 145, 157);
+    background: rgb(107, 198, 235);
+    color: rgb(196, 132, 143);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.cta-add{
+     background: rgb(189, 128, 138);;
+    border: none;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(107, 198, 235);
+    margin: 30px 0px 0px 30px;
+ 
+}
+
+
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+
+
+}
+.cover img{
+    height: 100%;
+    animation: drop 1.5s ease;
+}
+
+.products-select{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 23%;
+
+}
+
+@keyframes drop{
+    0%{
+        opacity: 1;
+        transform: translateY(-80px);
+    }
+
+}
+@media screen and (max-width: 1300px) {
+    .presentation{
+        flex-direction: column;  
+      }
+    .introduction{
+          margin-top: 5vh;
+          text-align: center;
+      }
+     .intro-text p{
+          font-size: 18px;
+      }
+      .cta{
+          padding: 10px 0px 0px 0px;
+      }
+      .products-select{
+          bottom: 5%;
+          right: 50%;
+          width: 50%;
+          transform: translate(50%, 5%);
+         }
+         .cover img{
+             height: 70%;
+
+         }
+    
+}
+
+
